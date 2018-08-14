@@ -39,13 +39,7 @@ var getNote = (title) => {
     var notes = fetchNotes();
 
     var filteredNotes = notes.filter((note) => note.title === title);
-    var note;
-
-    if (filteredNotes.length > 0) {
-        note = filteredNotes[0];
-    }
-    return note;
-
+    return filteredNotes[0];
 };
 
 var removeNote = (title) => {
