@@ -50,9 +50,16 @@ var removeNote = (title) => {
     return notes.length !== notesToSave.length;
 };
 
+var logNote = (note) => {
+    console.log('---');
+    console.log(`Note Title: ${note.title}`);
+    console.log(`Note Body: ${note.body}`);
+};
+
 module.exports = {
     addNote,
     getAll,
     getNote,
-    removeNote
+    removeNote,
+    logNote
 };
